@@ -1,12 +1,14 @@
 package main
 
 import (
-	"github.com/rivo/tview"
+	"fmt"
+	"tsumikey/pkg/misskey"
+	"tsumikey/pkg/tui"
 )
 
 func main() {
-	box := tview.NewBox().SetBorder(true).SetTitle("Hello, world!")
-	if err := tview.NewApplication().SetRoot(box, true).Run(); err != nil {
-		panic(err)
-	}
+	fmt.Println("test")
+	misskey.API_Test()
+	tui.TUI_Test()
+
 }
