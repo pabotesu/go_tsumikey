@@ -10,5 +10,5 @@ func main() {
 	fmt.Println("test")
 	misskey.API_Test()
 	tui.TUI_Test()
-
+	fmt.Printf("hello")
 }
